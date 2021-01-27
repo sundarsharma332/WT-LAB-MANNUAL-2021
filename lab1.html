@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: #fff;
+        text-transform: uppercase;
+    }
+
+    .container {
+        height: 400px;
+        width: 750px;
+        border: 1px solid red;
+        text-align: center;
+        margin-top: 200px;
+        padding: 1rem;
+        box-shadow: 0 0 10px 5px blue;
+    }
+    h1 {
+        font-family: sans-serif;
+        text-transform: uppercase;
+    }
+
+    label {
+        height: 50px;
+        width: 155px;
+        background-color: #111111;
+        color: #fff;
+        justify-content: center;
+        padding: 0.78rem;
+        margin-top: 1rem;
+
+    }
+
+    .label-answer {
+        width: 200px;
+    }
+
+    input {
+        height: 50px;
+        width: 200px;
+        border: 1px solid blue;
+    }
+    input:focus{
+        border:2px solid red;
+    }
+
+    button {
+        height: 40px;
+        width: 175px;
+        margin-top: 2rem;
+        text-transform: uppercase;
+
+    }
+</style>
+
+<body>
+    <div class="container" id="cont">
+        <h1>Simple Javascript Calculator</h1>
+        <label for="val1">VALUE1</label><input type="text" id="value1" name="val1">
+        <label for="val2">VALUE2</label><input type="text" id="value2" name="val2">
+        <br> <button class="btn btn-danger" id="add" onclick="calculator(this.id)">Addition</button>
+        <button class="btn btn-primary" id="sub" onclick="calculator(this.id)">Subtraction</button>
+        <button class="btn btn-success" id="mul" onclick="calculator(this.id)">Multipication</button>
+        <button class="btn btn-dark" id="div" onclick="calculator(this.id)">Division</button>
+        <br>
+
+        <label class="label-answer" for="ans">Answer</label> <input type="text" name="ans" id="answer" disabled>
+        <br><button class="btn btn-danger" id="clear" onclick="clearAll()">Clear
+            All</button>
+
+    </div>
+
+
+    <script type="text/javascript">
+        console.log("i am working")
+        function calculator(id){
+            var a = document.getElementById("value1").value;
+            var b = document.getElementById("value2").value;
+            var res = document.getElementById("answer");
+            var a = parseFloat(a);
+            var b = parseFloat(b);
+
+            if(isNaN(a) || isNaN(b)){
+                alert("Enter the valid number")
+                
+            }
+
+            if(id == "add"){
+                res.value = a + b;
+                document.getElementById("cont").classList.add("mystyle"); 
+            }
+            else if(id == "sub"){
+                res.value = a - b;
+            }
+            else if(id == "mul"){
+                res.value = a * b;
+            }
+            else if(id == "div"){
+                res.value= a / b;
+            }
+            
+        }
+
+        function clearAll(){
+            value1.value = "";
+            value2.value = "";
+            answer.value = 0;
+        }
+
+    </script>
+
+
+</body>
+
+</html>

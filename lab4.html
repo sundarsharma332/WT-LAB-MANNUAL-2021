@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+
+<head>
+    <style>
+
+    </style>
+</head>
+<body>
+    <script>
+        var str = prompt("Enteer anything ? ");
+        if(isNaN(str)){
+            // code for the first vowels
+            str = str.toUpperCase(str);
+            for(var i = 0;i < str.length ; i++){
+                var ch = str.charAt(i);
+                if(ch == "A" || ch == "E" || ch == "I" || ch == "O" || ch == "U"){
+                    break;
+                }
+            }
+            if(i < str.length){
+                alert("The Left Most Vowel is the " + (i + 1))
+            }
+            else{
+                alert("No Vowels Found in the Entire String")
+            }
+        
+            
+        }else{
+            // code for the palindrome
+            var num = parseInt(str);
+            var remainder , rev = 0;
+
+            while(num != 0){
+                remainder = num % 10;
+                rev = rev * 10 + remainder;
+                num = parseInt(num/10);
+            }
+
+            alert("the reverse of the" + str + " is " + rev);
+
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml-stylesheet type = "text/css" href="lab5.css" ?>
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <students>
+    <student>
+    <usn>USN : DKFAJKDSFDF</usn>
+    <name>NAME : SUNDAR RAJ SHARMA</name>
+    <college>COLLEGE : KNS INSTITUTE OF TECHNOLOGY</college>
+    <branch>BRANCH : COMPUTER SCIENCE</branch>
+    <year>YEAR : 2018</year>
+    <email>EMAIL : info@sundarsharma.com</email>
+    </student>
+    <student>
+    <usn>USN : DKFAJKDSFDF</usn>
+    <name>NAME : SUNDAR RAJ SHARMA</name>
+    <college>COLLEGE : KNS INSTITUTE OF TECHNOLOGY</college>
+    <branch>BRANCH : COMPUTER SCIENCE</branch>
+    <year>YEAR : 2018</year>
+    <email>EMAIL : info@sundarsharma.com</email>
+    </student>
+    <student>
+     <usn>USN : DKFAJKDSFDF</usn>
+    <name>NAME : SUNDAR RAJ SHARMA</name>
+    <college>COLLEGE : KNS INSTITUTE OF TECHNOLOGY</college>
+    <branch>BRANCH : COMPUTER SCIENCE</branch>
+    <year>YEAR : 2018</year>
+    <email>EMAIL : info@sundarsharma.com</email>
+    </student>
+    </students>
+    
+</body>
+</html>

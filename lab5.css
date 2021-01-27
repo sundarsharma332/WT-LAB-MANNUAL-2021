@@ -1,0 +1,28 @@
+student {
+    display: block;
+    margin-top: 1rem;
+    color: navy;
+    padding: 1rem;
+    
+  
+}
+usn {
+    display: block;
+    color: blue;
+}
+name {
+    display: block;
+    color: green;
+}
+branch {
+    display: block;
+    color: black;
+}
+year {
+    display: block;
+    color: red;
+}
+email {
+    display: block;
+    color: orange;
+}

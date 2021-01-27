@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table, tr, td{
+        border: 1px solid black;
+        width: 33%;
+        border-collapse: collapse;
+        text-align: center;
+        background-color: lightblue;
+    }
+    table{
+        margin: auto;
+    }
+</style>
+<body>
+    <script>
+        document.write("<table><tr><th colspan='3'>Sample text</th></tr><tr><td>Number</td><td>Square</td><td>Cube</td></tr>");
+
+        for(var i = 0; i <= 10;i++){
+            document.write("<tr><td>"+ i+ "</td><td>" + i * i+ "</td><td>" + i * i * i + "</td></tr>");
+        }
+        document.write("</table>")
+
+    </script>
+</body>
+</html>

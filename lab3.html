@@ -1,0 +1,58 @@
+<!DOCTYPE Html>
+<html>
+<head>
+<title>Lab 3</title>
+<style>
+
+  body{
+    background-color: #111;
+    color: #fff;
+  }
+  p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+  }
+</style>
+</head>
+<body>
+<p id="demo"></p>
+<script type="text/javascript">
+
+var a = document.getElementById("demo");
+var anim1 = setInterval(inTimer , 1000);
+var speed = 0;
+
+
+function inTimer(){
+
+  a.innerHTML = "TEXT GROWINNG";
+  a.setAttribute('style', "font-size:"+ speed + "px;color:red");
+  speed += 5;
+
+  if(speed >= 50){
+    clearInterval(anim1);
+    anim2 = setInterval(deTimer , 1000);
+  }
+
+
+}
+function deTimer(){
+  a.innerHTML = "TEXT SHRINKING";
+  speed -= 5;
+  a.setAttribute('style', "font-size:"+ speed + "px;color:blue");
+  if(speed == 5){
+    clearInterval(anim2);
+  }
+  
+
+
+}
+</script>
+   
+
+
+</body>
+
+</html>
